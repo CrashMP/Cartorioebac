@@ -127,7 +127,8 @@ int main() //Definindo variáveis - função principal
     	printf("\t1 - Registrar nomes\n"); //BarraT é parágrafo
     	printf("\t2 - Consultar nomes\n");
     	printf("\t3 - Deletar nomes\n\n");
-    	printf("Opção: ");
+    	printf("\t4 - Sair do sistema\n\n");
+    	printf("Opção: "); //fim do menu
 	
     	scanf ("%d", &opcao); //armazenando escolha do usuário
 	
@@ -146,6 +147,12 @@ int main() //Definindo variáveis - função principal
     		
     		case 3:
     		deletar();
+    		break;
+    		
+    		case 4:
+    		printf("\n\t Obrigado por utilizar o sistema!\n\n");	
+    		printf("________________________________________________________________________________________________\n\n");
+    		return 0;
     		break;
     		
     		default: //Default pois a mensagem irá aparecer somente caso nenhum dos casos acima ocorrer
